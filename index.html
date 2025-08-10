@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luxury Raffles — Win a Lamborghini Gallardo</title>
+  <meta name="description" content="Limited-entry luxury raffle with outrageous odds. One winner drives away in a Lamborghini Gallardo.">
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:title" content="Win a Lamborghini Gallardo — Luxury Raffles">
+  <meta property="og:description" content="150 entries only. Transparent live draw.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="media/hero.jpg">
+</head>
+<body>
+  <!-- Sticky top nav -->
+  <header class="nav">
+    <div class="brand">Luxury <span>Raffles</span></div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#video">Video</a>
+      <a href="#odds">Why Us</a>
+      <a href="#enter" class="btn small primary">Enter Now</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" style="--hero:url('media/hero.jpg')">
+    <div class="hero-shade">
+      <div class="hero-inner">
+        <p class="pre">Limited-Entry Supercar Raffle</p>
+        <h1>Win This <span class="gold">Lamborghini Gallardo</span></h1>
+        <p class="sub">150 entries only • best odds you’ll ever see • live & verified draw</p>
+
+        <div class="hero-ctas">
+          <a href="#enter" class="btn primary big">Enter the Raffle</a>
+          <a href="#video" class="btn ghost big">Watch & Hear It</a>
+        </div>
+
+        <div class="countdown" id="countdown" aria-live="polite">
+          <div><b id="d">00</b><span>Days</span></div>
+          <div><b id="h">00</b><span>Hours</span></div>
+          <div><b id="m">00</b><span>Minutes</span></div>
+          <div><b id="s">00</b><span>Seconds</span></div>
+        </div>
+
+        <div class="trust">
+          <span>🔒 Secure Checkout</span>
+          <span>📺 Live Draw</span>
+          <span>✅ Verified Winner</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / SPEC -->
+  <section id="about" class="section split">
+    <div class="card pad">
+      <h2>About the Car</h2>
+      <ul class="bullets">
+        <li>Gallardo V10 with immaculate history (docs on request)</li>
+        <li>Rare spec • clean interior • recent service</li>
+        <li>Priced AUD $175k — appreciating asset</li>
+      </ul>
+      <p class="muted tiny">Photos/video are of the actual car. Full inspection available prior to draw.</p>
+    </div>
+    <div class="card pad">
+      <h2>How the Raffle Works</h2>
+      <ul class="bullets">
+        <li><b>150 entries</b> only @ <b>$1,000</b> each (adjust as needed)</li>
+        <li>Every entry = unique order ID & email receipt</li>
+        <li>Live draw on IG/YouTube • third-party randomiser</li>
+        <li>Winner verified on stream & contacted immediately</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section id="video" class="section">
+    <h2>See & Hear the Gallardo</h2>
+    <div class="videobox">
+      <video id="carVideo" class="video" src="assets/lambo.mp4" poster="media/hero.jpg" controls playsinline muted preload="metadata"></video>
+      <div class="video-actions">
+        <button class="btn" onclick="toggleSound()">🔊 Toggle Sound</button>
+        <button class="btn" onclick="replay()">↺ Replay</button>
+        <a class="btn ghost" href="assets/lambo.mp4" download>⬇️ Download</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY / ODDS -->
+  <section id="odds" class="section grid-3">
+    <div class="tile">
+      <h3>Outrageous Odds</h3>
+      <p>Most raffles have tens of thousands of tickets. We cap entries at <b>150</b>. That’s ~<b>0.67%</b> chance per ticket.</p>
+    </div>
+    <div class="tile">
+      <h3>Transparent & Live</h3>
+      <p>We draw live, use a third-party randomiser, and publish the winner’s initials/order ID on stream.</p>
+    </div>
+    <div class="tile">
+      <h3>Real Car, Real Delivery</h3>
+      <p>Winner gets delivery options, rego assistance, and full transfer paperwork.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section gallery">
+    <div class="card media"><img src="media/g1.jpg" alt="Gallardo front"></div>
+    <div class="card media"><img src="media/g2.jpg" alt="Gallardo interior"></div>
+    <div class="card media"><img src="media/g3.jpg" alt="Gallardo rear"></div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <h2>What People Say</h2>
+    <div class="quotes">
+      <blockquote class="quote">“Cleanest Gallardo I’ve seen at this price. Paperwork checks out.” <span>— J. Patel</span></blockquote>
+      <blockquote class="quote">“Entry cap is insane. Best odds I’ve seen on a supercar raffle.” <span>— M. Russo</span></blockquote>
+    </div>
+  </section>
+
+  <!-- ENTER -->
+  <section id="enter" class="section card pad center">
+    <h2>Enter the Raffle</h2>
+    <p class="muted">150 entries • $1,000 per entry • Live draw date shown in the countdown.</p>
+    <!-- Replace href with Whop/Stripe checkout -->
+    <a class="btn primary xl" href="#" onclick="alert('Connect your Whop/Stripe checkout link here')">Get Your Entry</a>
+    <p class="tiny muted">You’ll receive an email receipt with your order ID immediately after purchase.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq">
+    <details class="card pad">
+      <summary>Is this legal?</summary>
+      <p>Raffles/lotteries are regulated and may require permits depending on jurisdiction. Ensure compliance before purchasing. We publish full T&Cs and license numbers (where required) before the draw.</p>
+    </details>
+    <details class="card pad">
+      <summary>How is the winner chosen?</summary>
+      <p>All entries are exported into a list. A third-party randomiser selects the winner live on stream. We show the order ID and contact the winner immediately.</p>
+    </details>
+    <details class="card pad">
+      <summary>What if the draw doesn’t sell out?</summary>
+      <p>The draw still proceeds on the announced date/time unless stated otherwise in the T&Cs. If postponed, all entrants are notified by email.</p>
+    </details>
+  </section>
+
+  <!-- COMPLIANCE -->
+  <section class="section smallprint">
+    <p><b>Compliance note:</b> This is a promotional raffle and may require a permit. Entry is void where prohibited. Always read the full Terms & Conditions and eligibility rules before entering.</p>
+  </section>
+
+  <!-- Sticky bottom CTA -->
+  <div class="sticky-cta">
+    <span>150 entries only • Live draw</span>
+    <a class="btn primary" href="#enter">Enter Now</a>
+  </div>
+
+  <footer class="footer">© <span id="year"></span> Luxury Raffles</footer>
+
+  <script>
+    // Countdown (set your draw date/time here: YYYY/MM/DD HH:MM)
+    const drawAt = new Date("2025/09/15 20:00"); // <-- EDIT ME
+    const dEl = document.getElementById('d'), hEl = document.getElementById('h'),
+          mEl = document.getElementById('m'), sEl = document.getElementById('s');
+    function tick(){
+      const now = new Date(), ms = drawAt - now;
+      if(ms <= 0){ dEl.textContent=hEl.textContent=mEl.textContent=sEl.textContent="00"; return; }
+      const s = Math.floor(ms/1000),
+            d = Math.floor(s/86400),
+            h = Math.floor((s%86400)/3600),
+            m = Math.floor((s%3600)/60),
+            sec = s%60;
+      dEl.textContent = String(d).padStart(2,'0');
+      hEl.textContent = String(h).padStart(2,'0');
+      mEl.textContent = String(m).padStart(2,'0');
+      sEl.textContent = String(sec).padStart(2,'0');
+    }
+    setInterval(tick, 1000); tick();
+
+    // Video helpers
+    function toggleSound(){
+      const v = document.getElementById('carVideo');
+      v.muted = !v.muted; if(!v.paused) v.play();
+    }
+    function replay(){
+      const v = document.getElementById('carVideo');
+      v.currentTime = 0; v.play();
+    }
+
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mobile nav collapse (optional)
+  </script>
+</body>
+</html>
